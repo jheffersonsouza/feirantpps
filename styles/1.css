@@ -15,7 +15,7 @@
 .wp-block-code {
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: Menlo,Consolas,monaco,monospace;
+    font-family: Menlo, Consolas, monaco, monospace;
     padding: .8em 1em
 }
 
@@ -64,7 +64,9 @@
     margin-bottom: 1.75em
 }
 
-.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation {
+.wp-block-pullquote cite,
+.wp-block-pullquote footer,
+.wp-block-pullquote__citation {
     color: currentColor;
     font-size: .8125em;
     font-style: normal;
@@ -77,7 +79,8 @@
     padding-left: 1em
 }
 
-.wp-block-quote cite,.wp-block-quote footer {
+.wp-block-quote cite,
+.wp-block-quote footer {
     color: currentColor;
     font-size: .8125em;
     font-style: normal;
@@ -96,7 +99,9 @@
     padding-left: 0
 }
 
-.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain) {
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large,
+.wp-block-quote:where(.is-style-plain) {
     border: none
 }
 
@@ -145,7 +150,8 @@
     margin: 0 0 1em
 }
 
-.wp-block-table td,.wp-block-table th {
+.wp-block-table td,
+.wp-block-table th {
     word-break: normal
 }
 

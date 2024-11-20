@@ -1,287 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="pt_BR">
-        <title>Ciência da computação</title>
-        <link rel='dns-prefetch' href='//profissoes.ufc.br'/>
-        <link rel='dns-prefetch' href='//cdnjs.cloudflare.com'/>
-        <script type="text/javascript">
-            /* <![CDATA[ */
-            window._wpemojiSettings = {
-                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-                "ext": ".png",
-                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
-                "svgExt": ".svg",
-                "source": {
-                    "concatemoji": "https:\/\/profissoes.ufc.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7"
-                }
-            };
-            /*! This file is auto-generated */
-            !function(i, n) {
-                var o, s, e;
-                function c(e) {
-                    try {
-                        var t = {
-                            supportTests: e,
-                            timestamp: (new Date).valueOf()
-                        };
-                        sessionStorage.setItem(o, JSON.stringify(t))
-                    } catch (e) {}
-                }
-                function p(e, t, n) {
-                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(t, 0, 0);
-                    var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)
-                      , r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(n, 0, 0),
-                    new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                    return t.every(function(e, t) {
-                        return e === r[t]
-                    })
-                }
-                function u(e, t, n) {
-                    switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case "emoji":
-                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
-                    }
-                    return !1
-                }
-                function f(e, t, n) {
-                    var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300,150) : i.createElement("canvas")
-                      , a = r.getContext("2d", {
-                        willReadFrequently: !0
-                    })
-                      , o = (a.textBaseline = "top",
-                    a.font = "600 32px Arial",
-                    {});
-                    return e.forEach(function(e) {
-                        o[e] = t(a, e, n)
-                    }),
-                    o
-                }
-                function t(e) {
-                    var t = i.createElement("script");
-                    t.src = e,
-                    t.defer = !0,
-                    i.head.appendChild(t)
-                }
-                "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports",
-                s = ["flag", "emoji"],
-                n.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                },
-                e = new Promise(function(e) {
-                    i.addEventListener("DOMContentLoaded", e, {
-                        once: !0
-                    })
-                }
-                ),
-                new Promise(function(t) {
-                    var n = function() {
-                        try {
-                            var e = JSON.parse(sessionStorage.getItem(o));
-                            if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
-                                return e.supportTests
-                        } catch (e) {}
-                        return null
-                    }();
-                    if (!n) {
-                        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
-                            try {
-                                var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));"
-                                  , r = new Blob([e],{
-                                    type: "text/javascript"
-                                })
-                                  , a = new Worker(URL.createObjectURL(r),{
-                                    name: "wpTestEmojiSupports"
-                                });
-                                return void (a.onmessage = function(e) {
-                                    c(n = e.data),
-                                    a.terminate(),
-                                    t(n)
-                                }
-                                )
-                            } catch (e) {}
-                        c(n = f(s, u, p))
-                    }
-                    t(n)
-                }
-                ).then(function(e) {
-                    for (var t in e)
-                        n.supports[t] = e[t],
-                        n.supports.everything = n.supports.everything && n.supports[t],
-                        "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                    n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
-                    n.DOMReady = !1,
-                    n.readyCallback = function() {
-                        n.DOMReady = !0
-                    }
-                }).then(function() {
-                    return e
-                }).then(function() {
-                    var e;
-                    n.supports.everything || (n.readyCallback(),
-                    (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji),
-                    t(e.wpemoji)))
-                }))
-            }((window,
-            document), window._wpemojiSettings);
-            /* ]]> */
-        </script>
-        <style id='wp-emoji-styles-inline-css' type='text/css'>
-            img.wp-smiley, img.emoji {
-                display: inline !important;
-                border: none !important;
-                box-shadow: none !important;
-                height: 1em !important;
-                width: 1em !important;
-                margin: 0 0.07em !important;
-                vertical-align: -0.1em !important;
-                background: none !important;
-                padding: 0 !important;
-            }
-        </style>
-        <link rel='stylesheet' id='wp-block-library-css' href='https://profissoes.ufc.br/wp-includes/css/dist/block-library/style.min.css?ver=6.7' type='text/css' media='all'/>
 
-        <link rel='stylesheet' id='wp-block-library-theme-inline-css' href='./styles/1.css' type='text/css' media='all'/>
-        <link rel='stylesheet' id='classic-theme-styles-inline-css' href='./styles/2.css' type='text/css' media='all'/>
-        <link rel='stylesheet' id='global-styles-inline-css' href='./styles/3.css' type='text/css' media='all'/>
-        
-        <link rel='stylesheet' id='fontawesome-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css?ver=6.7' type='text/css' media='all'/>
-        <link rel='stylesheet' id='style-css' href='https://profissoes.ufc.br/wp-content/themes/person/assets/css/theme.min.css?ver=6.7' type='text/css' media='all'/>
-        <link rel='stylesheet' id='profissoes-css' href='https://profissoes.ufc.br/wp-content/themes/person/assets/css/sites/profissoes.min.css?ver=6.7' type='text/css' media='all'/>
-        <script type="text/javascript" src="https://profissoes.ufc.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-        <script type="text/javascript" src="https://profissoes.ufc.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-        <link rel="https://api.w.org/" href="https://profissoes.ufc.br/wp-json/"/>
-        <link rel="alternate" title="JSON" type="application/json" href="https://profissoes.ufc.br/wp-json/wp/v2/pages/218"/>
-        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://profissoes.ufc.br/xmlrpc.php?rsd"/>
-        <link rel="canonical" href="https://profissoes.ufc.br/ciencia-da-computacao/"/>
-        <link rel='shortlink' href='https://profissoes.ufc.br/?p=218'/>
-        <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://profissoes.ufc.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofissoes.ufc.br%2Fciencia-da-computacao%2F"/>
-        <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://profissoes.ufc.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofissoes.ufc.br%2Fciencia-da-computacao%2F&#038;format=xml"/>
-        <link rel="shortcut icon" type="image/png" href="https://wp.ufc.br/a/favicon.ico"/>
-    </head>
-    <body class="page-template-default page page-id-218 wp-custom-logo">
-        <div id="a11y" class="a11y">
-            <span id="a-header" class="screen-reader-text">Área do cabeçalho</span>
-        </div>
-        <div id="brand" class="header">
-            <div>
-                <div class="logo">
-                    <h1>
-                        <a href="#">
-                            <img width="1250x" src="img/logotop.png" alt="logo da escola de ensino médio tabelião">
-                        </a>
-                    </h1>
-                </div>
-                <div class="controls">
-                    <span id="a-menu" class="screen-reader-text">Área do menu</span>
-                    <div class="menu-menu-principal-container">
-                        <ul id="menu-menu-principal" class="menu"> </ul>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="pt_BR">
+    <title>Ciência da computação</title>
+    <link rel='dns-prefetch' href='//profissoes.ufc.br' />
+    <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+
+    <link rel='stylesheet' id='wp-block-library-css'
+        href='https://profissoes.ufc.br/wp-includes/css/dist/block-library/style.min.css?ver=6.7' type='text/css'
+        media='all' />
+    <!--Estilos separados para pastas-->
+    <link rel='stylesheet' id='wp-block-library-theme-inline-css' href='./styles/1.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='classic-theme-styles-inline-css' href='./styles/2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='global-styles-inline-css' href='./styles/3.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-emoji-styles-inline-css' href='./styles/4.css' type='text/css' media='all' />
+    <!----->
+
+    <link rel='stylesheet' id='fontawesome-css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css?ver=6.7' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='style-css'
+        href='https://profissoes.ufc.br/wp-content/themes/person/assets/css/theme.min.css?ver=6.7' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='profissoes-css'
+        href='https://profissoes.ufc.br/wp-content/themes/person/assets/css/sites/profissoes.min.css?ver=6.7'
+        type='text/css' media='all' />
+    <script type="text/javascript" src="https://profissoes.ufc.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+        id="jquery-core-js"></script>
+    <script type="text/javascript" src="https://profissoes.ufc.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+        id="jquery-migrate-js"></script>
+    <link rel="https://api.w.org/" href="https://profissoes.ufc.br/wp-json/" />
+    <link rel="alternate" title="JSON" type="application/json"
+        href="https://profissoes.ufc.br/wp-json/wp/v2/pages/218" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://profissoes.ufc.br/xmlrpc.php?rsd" />
+    <link rel="canonical" href="https://profissoes.ufc.br/ciencia-da-computacao/" />
+    <link rel='shortlink' href='https://profissoes.ufc.br/?p=218' />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
+        href="https://profissoes.ufc.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofissoes.ufc.br%2Fciencia-da-computacao%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
+        href="https://profissoes.ufc.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofissoes.ufc.br%2Fciencia-da-computacao%2F&#038;format=xml" />
+    <link rel="shortcut icon" type="image/png" href="https://wp.ufc.br/a/favicon.ico" />
+</head>
+
+<body class="page-template-default page page-id-218 wp-custom-logo">
+    <div id="a11y" class="a11y">
+        <span id="a-header" class="screen-reader-text">Área do cabeçalho</span>
+    </div>
+    <div id="brand" class="header">
+        <div>
+            <div class="logo">
+                <h1>
+                    <a href="#">
+                        <img width="1250x" src="img/logotop.png" alt="logo da escola de ensino médio tabelião">
+                    </a>
+                </h1>
+            </div>
+            <div class="controls">
+                <span id="a-menu" class="screen-reader-text">Área do menu</span>
+                <div class="menu-menu-principal-container">
+                    <ul id="menu-menu-principal" class="menu"> </ul>
                 </div>
             </div>
         </div>
-        <div id="page" class="content">
-            <div>
-                <h1>Ciência da Computação</h1>
-                <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-                <h2 class="wp-block-heading">
-                    <strong>DESCRIÇÃO</strong>
-                </h2>
-                <p>A profissão de Ciência da Computação abrange o estudo e a aplicação de princípios teóricos e práticos para resolver problemas computacionais.</p>
-                <p>Profissionais dessa área trabalham no desenvolvimento de software, sistemas de computação, algoritmos, inteligência artificial, redes, bancos de dados, segurança cibernética e muito mais.</p>
-                <p>Eles são responsáveis pela criação, manutenção e otimização de tecnologias que impactam diretamente a vida cotidiana, seja por meio de aplicativos, sistemas empresariais ou soluções inovadoras em diversos setores.</p>
-                <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-                <h2 class="wp-block-heading">
-                    <strong>ONDE TRABALHA</strong>
-                </h2>
-                <p>
-                    <br>A demanda de mercado de trabalho para um profissional de Ciência da Computação continua alta e tem se expandido ao longo dos últimos anos. Isso se deve ao crescimento acelerado de tecnologias emergentes, como inteligência artificial, big data, computação em nuvem, segurança cibernética, desenvolvimento de software e automação.
-                </p>
-                <p>1. Tecnologia e Inovação: Empresas de diversos setores, como saúde, finanças, varejo, logística e até governo, estão cada vez mais adotando tecnologias avançadas para melhorar seus processos, criando uma enorme necessidade de profissionais qualificados em ciência da computação.</p>
-                <P>2. Especializações: Há uma demanda crescente por profissionais com habilidades específicas, como programação, análise de dados, inteligência artificial, aprendizado de máquina, blockchain, segurança cibernética e computação em nuvem.</p>
-                <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-                <h2 class="wp-block-heading">
-                    <strong>PRINCIPAIS ATIVIDADES</strong>
-                </h2>
-                <p>
-                    <br>As principais atividades de um cientista da computação envolvem uma combinação de pesquisa, desenvolvimento e aplicação de tecnologias computacionais em diversos contextos.
-                </p>
-                <p>Algumas das principais atividades incluem: Pesquisa e Inovação, Desenvolvimento de Software, Análise de Dados, Modelagem e Simulação, Desenvolvimento de Algoritmos, Segurança da Informação, Computação Distribuída e Redes, Inteligência Artificial(AI) e Aprendizado de Máquinas, Interação Humano-Computador e Consultoria e Aplicação de Tecnologias</p>
-                <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-                <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
-                <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-                <h2 class="wp-block-heading">FICHA DO CURSO</h2>
-                <p>
-                    <strong>Ingresso</strong>: Sisu 
-                    <br>
-                    <strong>Onde</strong>: Campus do Pici em Fortaleza; Campus de Crateús; Campus de Quixadá; Campus de Russas;
-                    <br>
-                    <strong>Grau</strong>: Bacharelado.
-                    <br>
-                    <strong>Duração</strong>: 8 semestres.
-                    <br>
-                    <strong>Turno</strong>: Integral.
-                    <br>
-                    <strong>Número de vagas</strong>:
-                    <br>- Fortaleza – 60 por ano, com ingresso no 1º semestre;
-                    <br>- Crateús – 50 por ano, com ingresso no 1º semestre; 
-                    <br>- Quixadá – 50 por ano, com ingresso no 1º semestre;
-                    <br>- Russas – 100 por ano (50 por semestre).
-                </p>
-                <div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
-                <ul class="subpages"></ul>
-            </div>
+    </div>
+    <div id="page" class="content">
+        <div>
+            <h1>Ciência da Computação</h1>
+            <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+            <h2 class="wp-block-heading">
+                <strong>DESCRIÇÃO</strong>
+            </h2>
+            <p>A profissão de Ciência da Computação abrange o estudo e a aplicação de princípios teóricos e práticos
+                para resolver problemas computacionais.</p>
+            <p>Profissionais dessa área trabalham no desenvolvimento de software, sistemas de computação, algoritmos,
+                inteligência artificial, redes, bancos de dados, segurança cibernética e muito mais.</p>
+            <p>Eles são responsáveis pela criação, manutenção e otimização de tecnologias que impactam diretamente a
+                vida cotidiana, seja por meio de aplicativos, sistemas empresariais ou soluções inovadoras em diversos
+                setores.</p>
+            <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+            <h2 class="wp-block-heading">
+                <strong>ONDE TRABALHA</strong>
+            </h2>
+            <p>
+                <br>A demanda de mercado de trabalho para um profissional de Ciência da Computação continua alta e tem
+                se expandido ao longo dos últimos anos. Isso se deve ao crescimento acelerado de tecnologias emergentes,
+                como inteligência artificial, big data, computação em nuvem, segurança cibernética, desenvolvimento de
+                software e automação.
+            </p>
+            <p>1. Tecnologia e Inovação: Empresas de diversos setores, como saúde, finanças, varejo, logística e até
+                governo, estão cada vez mais adotando tecnologias avançadas para melhorar seus processos, criando uma
+                enorme necessidade de profissionais qualificados em ciência da computação.</p>
+            <P>2. Especializações: Há uma demanda crescente por profissionais com habilidades específicas, como
+                programação, análise de dados, inteligência artificial, aprendizado de máquina, blockchain, segurança
+                cibernética e computação em nuvem.</p>
+            <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+            <h2 class="wp-block-heading">
+                <strong>PRINCIPAIS ATIVIDADES</strong>
+            </h2>
+            <p>
+                <br>As principais atividades de um cientista da computação envolvem uma combinação de pesquisa,
+                desenvolvimento e aplicação de tecnologias computacionais em diversos contextos.
+            </p>
+            <p>Algumas das principais atividades incluem: Pesquisa e Inovação, Desenvolvimento de Software, Análise de
+                Dados, Modelagem e Simulação, Desenvolvimento de Algoritmos, Segurança da Informação, Computação
+                Distribuída e Redes, Inteligência Artificial(AI) e Aprendizado de Máquinas, Interação Humano-Computador
+                e Consultoria e Aplicação de Tecnologias</p>
+            <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+            <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+            <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+            <h2 class="wp-block-heading">FICHA DO CURSO</h2>
+            <p>
+                <strong>Ingresso</strong>: Sisu
+                <br>
+                <strong>Onde</strong>: Campus do Pici em Fortaleza; Campus de Crateús; Campus de Quixadá; Campus de
+                Russas;
+                <br>
+                <strong>Grau</strong>: Bacharelado.
+                <br>
+                <strong>Duração</strong>: 8 semestres.
+                <br>
+                <strong>Turno</strong>: Integral.
+                <br>
+                <strong>Número de vagas</strong>:
+                <br>- Fortaleza – 60 por ano, com ingresso no 1º semestre;
+                <br>- Crateús – 50 por ano, com ingresso no 1º semestre;
+                <br>- Quixadá – 50 por ano, com ingresso no 1º semestre;
+                <br>- Russas – 100 por ano (50 por semestre).
+            </p>
+            <div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
+            <ul class="subpages"></ul>
         </div>
-        <div id="footer" class="footer">
-            <div>
-                <span id="a-footer" class="screen-reader-text">Área do rodapé</span>
-                <div class="footer-more">
-                    <!--logos exageradas-->
-                    <img src="/img/logotabeliao.png" alt=""/><!--troca tbm depois-->
-                    <img src="img/ntpps.png" alt="">
-                    <img src="img/logoce.png" alt="">
-                    <img src="img/prefeitura-de-pentecoste-ce-1618264849.jpg" alt="">
-                </div>
-                <div class="footer-credits">
-                    <p style="color: #fff; text-align: center">
-                        <a href="https://github.com/jheffersonsouza/feirantpps" target="_blank" title="GitHub" rel="nofollow">
-                            Sob licença GPL-3.0
-                        </a>
-                    </p>
-                    <p style="font-size: 2.2rem;">
-                        <a href="https://www.instagram.com/eemtitjrg/" target="_blank" title="Instagram" rel="nofollow">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </p>
-                </div>
-                <a class="screen-reader-text" href="#a-header">Ir para o topo</a>
-                <div class="footer-scripts">
-                    <script type="text/javascript" src="https://profissoes.ufc.br/wp-content/themes/person/main.js?ver=1.1" id="script-js"></script>
-                    <!--remover isso?-->
-                    <div class="vlibras">
-                        <div vw class="enabled">
-                            <div vw-access-button class="active"></div>
-                            <div vw-plugin-wrapper>
-                                <div class="vw-plugin-top-wrapper"></div>
-                            </div>
+    </div>
+    <div id="footer" class="footer">
+        <div>
+            <span id="a-footer" class="screen-reader-text">Área do rodapé</span>
+            <div class="footer-more">
+                <!--logos exageradas-->
+                <img src="/img/logotabeliao.png" alt="" /><!--troca tbm depois-->
+                <img src="img/ntpps.png" alt="">
+                <img src="img/logoce.png" alt="">
+                <img src="img/prefeitura-de-pentecoste-ce-1618264849.jpg" alt="">
+            </div>
+            <div class="footer-credits">
+                <p style="color: #fff; text-align: center">
+                    <a href="https://github.com/jheffersonsouza/feirantpps" target="_blank" title="GitHub"
+                        rel="nofollow">
+                        Sob licença GPL-3.0
+                    </a>
+                </p>
+                <p style="font-size: 2.2rem;">
+                    <a href="https://www.instagram.com/eemtitjrg/" target="_blank" title="Instagram" rel="nofollow">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </p>
+            </div>
+            <a class="screen-reader-text" href="#a-header">Ir para o topo</a>
+            <div class="footer-scripts">
+                <script type="text/javascript" src="https://profissoes.ufc.br/wp-content/themes/person/main.js?ver=1.1"
+                    id="script-js"></script>
+                <!--remover isso?-->
+                <!--O vlibras é necessario pra cessibilidade, mesmo que no fim nem vamos usar ~Ass Jhefferson-->
+                <div class="vlibras">
+                    <div vw class="enabled">
+                        <div vw-access-button class="active"></div>
+                        <div vw-plugin-wrapper>
+                            <div class="vw-plugin-top-wrapper"></div>
                         </div>
-                        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-                        <script>
-                            new window.VLibras.Widget('https://vlibras.gov.br/app');
-                        </script>
                     </div>
-                    <!----->
+                    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                    <script>
+                        new window.VLibras.Widget('https://vlibras.gov.br/app');
+                    </script>
                 </div>
+                <!----->
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
