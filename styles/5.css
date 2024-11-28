@@ -1,0 +1,186 @@
+/* Reseta estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #182c12;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #074b10;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.header .logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+.header .controls {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header .menu li {
+    display: inline-block;
+}
+
+.header .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header .menu a:hover {
+    color: #2bff00;
+}
+
+/* Conteúdo principal */
+.content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content h1, .content h2 {
+    color: #0c6600;
+    margin-bottom: 1rem;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #ffa600;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    color: #202420;
+}
+
+.content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Listas */
+.content ul {
+    list-style: disc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #1e3b22;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer .footer-more {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer .footer-more img {
+    max-width: 100px;
+    height: auto;
+}
+
+.footer .footer-credits {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer .footer-credits a {
+    color: #2bff00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .footer-credits a:hover {
+    color: #fff;
+}
+
+.footer .footer-credits i {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Botão ao topo */
+.screen-reader-text {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.screen-reader-text:focus {
+    position: static;
+    clip: auto;
+    overflow: visible;
+    height: auto;
+    width: auto;
+    white-space: normal;
+}
+
+.footer .screen-reader-text {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .controls {
+        margin-top: 1rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .footer .footer-more {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
